@@ -1,0 +1,5 @@
+.vscode
+.DS_Store
+.env
+golang_rpc
+golang_rpc_unix
