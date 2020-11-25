@@ -82,7 +82,7 @@ func handleMenu(item string) {
 		checkError(err)
 
 		var reply persist.Book
-		err = rpcClient.Call("Server.DeleteBook", title, &reply)
+		err = rpcClient.Call("Server.DeleteBookByTitle", title, &reply)
 		checkError(err)
 
 		fmt.Println("Book removed successfully")
